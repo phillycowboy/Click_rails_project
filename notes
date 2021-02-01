@@ -1,0 +1,30 @@
+Click - 
+
+Is a photo sharing website where:
+-a user can create there own photo with a descritpiton 
+-a user can edit there own photo 
+-a user can delete their own photo 
+-a user can view other users photos 
+-a user can comment on other users photos 
+
+A USER should be able to- 
+- Signup if they are a new user 
+-Sign In if they are already current user
+- A user can create, edit, update, and delete their own posts 
+
+FLOW OF CLICK- 
+
+A user navigates to the root path/home page upon entering the url
+then 
+given the option to signin or signup 
+
+then 
+
+once the credentials have been authenticated they are navigated to the index page to view all of the other users posts/photos, whihc they can comment on 
+then 
+
+on the index page within the nav bar they can choose to create a post, or view their own posts and edit them through link
+
+then 
+
+once the user has created or edited a post it posts to the index page for everyone to view.  
