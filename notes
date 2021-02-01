@@ -28,3 +28,32 @@ on the index page within the nav bar they can choose to create a post, or view t
 then 
 
 once the user has created or edited a post it posts to the index page for everyone to view.  
+
+MODELS 
+
+________________
+
+User Model 
+    has_many :photos 
+    has_many :comments 
+    has_many :photos, through: comments 
+
+    -username 
+    -password_digest 
+    -first_name 
+    -last_name 
+
+Photo Model 
+    belongs_to :user 
+    has_many :comments 
+    has_many :users, through: comments
+
+    --content: 
+    -image(main content)
+    -description 
+    -created at timestamp 
+
+Comment Model 
+    belongs_to :user 
+    belongs_to :photo 
+    --content 
