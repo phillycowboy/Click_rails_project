@@ -100,13 +100,13 @@ GEM
     method_source (1.0.0)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
-    mini_portile2 (2.5.0)
     minitest (5.14.3)
     msgpack (1.4.2)
     nio4r (2.5.4)
-    nokogiri (1.11.1)
-      mini_portile2 (~> 2.5.0)
+    nokogiri (1.11.1-x86_64-linux)
       racc (~> 1.4)
+    optimist (3.0.1)
+    parslet (2.0.0)
     public_suffix (4.0.6)
     puma (5.2.0)
       nio4r (~> 2.0)
@@ -175,6 +175,7 @@ GEM
     sqlite3 (1.4.2)
     thor (1.1.0)
     tilt (2.0.10)
+    trollop (2.9.10)
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
@@ -199,6 +200,10 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
+    yarn (0.1.1)
+      parslet (>= 1.2)
+      rack (>= 1.3)
+      trollop (>= 1.16)
     zeitwerk (2.4.2)
 
 PLATFORMS
@@ -211,6 +216,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   jbuilder (~> 2.7)
   listen (~> 3.3)
+  optimist (~> 3.0)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.1)
@@ -222,7 +228,8 @@ DEPENDENCIES
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
-  webpacker (~> 5.0)
+  webpacker
+  yarn (~> 0.1.1)
 
 RUBY VERSION
    ruby 2.6.1p33
