@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bcrypt', '~> 3.1.7'
 gem 'yarn', '~> 0.1.1'
 gem 'optimist', '~> 3.0'
+gem 'pry'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

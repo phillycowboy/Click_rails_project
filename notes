@@ -57,3 +57,6 @@ Comment Model
     belongs_to :user 
     belongs_to :photo 
     --content 
+
+    resources :users, except: [:new]
+get '/signup', to: "users#new", as: "signup"
