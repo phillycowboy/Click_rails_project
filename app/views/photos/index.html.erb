@@ -1,6 +1,6 @@
 <h1>Photo Feed</h1>
 
 <% @photos.each do |p| %>
-    <h4><%= p.image %></h4>
+    <img src="<%= p.image %>" alt=""></img>
     <h4><%= p.description %></h4>
 <% end %>
