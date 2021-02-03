@@ -24,11 +24,16 @@ class PhotosController < ApplicationController
     end
 
     def edit 
-
+        @photo = Photo.find_by(id: params[:id])
     end
 
     def update 
-
+        @photo = Photo.find_by(id: params[:id])
+        if @photo.update(photo_params)
+            redirect_to photo_path(@photo)
+        else 
+            render :edit 
+        end
     end
 
     def destroy 
