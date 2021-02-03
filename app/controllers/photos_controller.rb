@@ -3,7 +3,7 @@ class PhotosController < ApplicationController
     before_action :redirect_if_not_logged_in
 
     def index 
-        @photos = Photo.all 
+        @photos = Photo.all.reverse
     end
 
     def new 
