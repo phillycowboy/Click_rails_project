@@ -9,7 +9,8 @@ Rails.application.routes.draw do
 
   resources :users, except: [:new]
   get '/signup', to: "users#new", as: "signup"
-  resources :photos
-  resources :comments
+  resources :photos do 
+    resources :comments
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
