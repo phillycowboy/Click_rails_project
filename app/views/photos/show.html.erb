@@ -2,4 +2,4 @@
 <%= @photo.description %>
 
 <%= link_to "Edit Photo", edit_photo_path(@photo) %>
-<%= link_to "Delete Photo", photo_path(@photo.id), method: "delete" %>
+<%= button_to "Delete Photo", photo_path(@photo.id), method: "delete" %>
