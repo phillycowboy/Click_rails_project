@@ -5,7 +5,11 @@ class PhotosController < ApplicationController
     def index 
         @photos = Photo.all.reverse
     end
-
+    
+    def show 
+        @photo = Photo.find_by(id: params[:id])
+    end
+    
     def new 
         @photo = Photo.new 
     end
@@ -19,9 +23,6 @@ class PhotosController < ApplicationController
         end
     end
 
-    def show 
-        @photo = Photo.find_by(id: params[:id])
-    end
 
     def edit 
         @photo = Photo.find_by(id: params[:id])
@@ -37,7 +38,9 @@ class PhotosController < ApplicationController
     end
 
     def destroy 
-
+        @photo = Photo.find(params[:id])
+        @photo.destroy
+        redirect_to photos_path
     end
 
     private 
