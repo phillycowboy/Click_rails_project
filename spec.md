@@ -14,17 +14,17 @@ X  Include at least one many-to-many relationship (x has_many y through z, y has
  -User can submit a comment 
 
  Include reasonable validations for simple model objects (list of model objects with validations e.g. User, Recipe, Ingredient, Item)
- - validations for User and Photo and Comment 
+ - validations for User and Photo and Comment need to be built out 
 
  Include a class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
- - ???
+ - ???, ask what others are doing, get some help to understand this. 
 
  
  X Include signup (how e.g. Devise)
 X Include login (how e.g. Devise)
 X Include logout (how e.g. Devise)
  
- Include third party signup/login (how e.g. Devise/OmniAuth)
+ Include third party signup/login (how e.g. Devise/OmniAuth)-- GOOGLE OMNIAUTH like in the video. 
  X Include nested resource show or index (URL e.g. users/2/recipes)
  X Include nested resource "new" form (URL e.g. recipes/1/ingredients/new)
  Include form display of validation errors (form URL e.g. /recipes/new)
@@ -32,5 +32,5 @@ Confirm:
 
  The application is pretty DRY
  Limited logic in controllers
- Views use helper methods if appropriate
- Views use partials if appropriate
+ Views use helper methods if appropriate - before action in the controllers where you are repeating code 
+ Views use partials if appropriate Photo and Comment, Possibly new user? 
