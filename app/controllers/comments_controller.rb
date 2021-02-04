@@ -8,6 +8,7 @@ class CommentsController < ApplicationController
         @photo = Photo.find(params[:photo_id])
         @comment = Comment.find(params[:id])
     end
+    
     def new 
         @photo = Photo.find_by(id: params[:photo_id])
         @comment = @photo.comments.build
