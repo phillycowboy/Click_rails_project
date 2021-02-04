@@ -1,2 +1,2 @@
-<h1><%= @photo.image %></h1>
-<h1><%= @comment.content %></h1>
+<img src="<%= @photo.image %>" alt=""></img>
+<h1><%= @comment.user.username %>: <%= @comment.content %></h1>
