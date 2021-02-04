@@ -1,0 +1,5 @@
+<% if instance.errors %>
+    <% instance.errors.full_messages.each do |e|%>
+        <h3><%= e %></h3>
+    <% end %>
+<% end %>

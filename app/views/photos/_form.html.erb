@@ -1,3 +1,5 @@
+<%= render partial: "/errors", locals: {instance: @photo}%>
+
 <%= form_for(@photo) do |f|%>
     <%= f.label :image, "Image Link" %>
     
