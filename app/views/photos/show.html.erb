@@ -5,6 +5,7 @@
 <%= button_to "Delete Photo", photo_path(@photo.id), method: "delete" %>
 <%= link_to "Comment", new_photo_comment_path(@photo) %>
 
+ <h3>Comments:</h3>
 <% @photo.comments.each do |comment|%>
-    <p><%= comment.user.username%>: <%= comment.content %></p>
+    <h4><%= comment.user.username%>:</h4> <p><%= comment.content %></p>
 <% end %>
