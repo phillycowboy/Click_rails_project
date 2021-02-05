@@ -10,17 +10,15 @@ class PhotosController < ApplicationController
     def show 
         @photo = Photo.find_by(id: params[:id])
         @user = @photo.users.first
-        raise @photo.users.inspect  
-        
     end
     
     def new 
-        @photo = current_user.photos.build 
+        @photo = Photo.new 
     end
 
     def create 
-        @photo = current_user.photos.build(photo_params)
-        if @photo.save 
+        @photo = Photo.new(photo_params)
+        if @photo.save  
             redirect_to photos_path
         else 
             render :new

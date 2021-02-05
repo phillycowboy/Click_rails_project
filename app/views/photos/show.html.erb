@@ -1,7 +1,7 @@
 <img src="<%= @photo.image %>" alt=""></img> <br>
 <%= @photo.description %>
 
-<%= link_to "Edit Photo", edit_user_photo_path(@user, @photo) %>
+<%= link_to "Edit Photo", photo_path(@photo) %>
 <%= button_to "Delete Photo", photo_path(@photo.id), method: "delete" %>
 <%= link_to "Comment", new_photo_comment_path(@photo) %>
 
