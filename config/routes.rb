@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   get '/logout' => 'sessions#destroy'
 
 
-  resources :users, except: [:new]
-  get '/signup', to: "users#new", as: "signup"
+  resources :users, except: [:new] do 
+    resources :photos
+  end
+  get '/signup', to: "users#new", as: "signup" 
   resources :photos do 
     resources :comments
   end
