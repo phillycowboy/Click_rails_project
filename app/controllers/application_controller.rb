@@ -15,6 +15,6 @@ class ApplicationController < ActionController::Base
     end
 
     def validate_user 
-        # need to find a way to validate the user so they cannot manipulate others posts.
+        current_user == @photo.user 
     end
 end
