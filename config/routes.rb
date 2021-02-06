@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :tag_photos
+  resources :hash_tags
   # get '/signup' => 'users#new'
   # post '/signup' => 'users#show'
   root 'sessions#home'
