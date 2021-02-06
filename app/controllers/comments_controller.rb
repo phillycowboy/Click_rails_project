@@ -1,7 +1,8 @@
 class CommentsController < ApplicationController
     before_action :find_photo 
-    def index
 
+    def index
+        
     end
 
     def show 
@@ -20,6 +21,18 @@ class CommentsController < ApplicationController
         else 
             render :new 
         end
+    end
+
+    def edit 
+
+    end
+
+    def update 
+
+    end
+
+    def destory 
+
     end
 
     private 
