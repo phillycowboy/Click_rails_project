@@ -1,7 +1,7 @@
 class PhotosController < ApplicationController
 
     before_action :redirect_if_not_logged_in
-    # before_action :validate_user, only: [:edit, :update, :destroy]
+    # before_action :, only: [:edit, :update, :destroy]
 
     def index 
         @photos = Photo.all.reverse
@@ -45,6 +45,8 @@ class PhotosController < ApplicationController
     end
 
     private 
+
+
 
     def photo_params 
         params.require(:photo).permit(:image, :description)
