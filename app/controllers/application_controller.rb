@@ -7,10 +7,6 @@ class ApplicationController < ActionController::Base
         @current_user ||= User.find_by_id(session[:user_id]) if session[:user_id]
     end
 
-    # def current_user?(user)
-    #     user == current_user
-    # end
-
     def logged_in?
         !!current_user
     end
@@ -18,6 +14,22 @@ class ApplicationController < ActionController::Base
     def redirect_if_not_logged_in 
        redirect_to root_path if !logged_in?
     end
+
+    # def authenticate_owner 
+    #     if params[:user_id]
+    #         redirect_to photos_path unless current_user == User.find_by(id: params[:user_id])
+    #     else
+    #         redirect_to photos_path unless current_user == User.find_by(id: params[:id])
+    #     end
+    # end
+
+    # def set_user 
+    #     if params[:user_id]
+    #         @user = User.find_by(id: params[:user_id])
+    #     else 
+    #         @user = User.find_by(id: params[:id])
+    #     end
+    # end
 
   
 end

@@ -1,7 +1,8 @@
 class PhotosController < ApplicationController
-
+    # before_action :authenticate_owner
+    # before_action :set_user 
     before_action :redirect_if_not_logged_in
-    # before_action :, only: [:edit, :update, :destroy]
+    before_action :photo_find, only: [:edit, :update, :destroy]
 
     def index 
         @photos = Photo.all.reverse
@@ -27,6 +28,7 @@ class PhotosController < ApplicationController
 
     def edit 
         @photo = Photo.find_by(id: params[:id])
+        # @user = User.find_by(id: params[:id])
     end
 
     def update 
@@ -46,7 +48,13 @@ class PhotosController < ApplicationController
 
     private 
 
-
+    def photo_find 
+        @photo = Photo.find_by(id: params[:id])
+        if @photo.user != current_user
+            redirect_to photo_path(@photo) 
+            flash[:message] = "You do not have permission to edit this photo!"
+        end
+    end
 
     def photo_params 
         params.require(:photo).permit(:image, :description)
