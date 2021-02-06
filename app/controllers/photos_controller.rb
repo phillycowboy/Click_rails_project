@@ -9,7 +9,6 @@ class PhotosController < ApplicationController
     
     def show 
         @photo = Photo.find_by(id: params[:id])
-        @user = @photo.users.first
     end
     
     def new 
@@ -17,7 +16,7 @@ class PhotosController < ApplicationController
     end
 
     def create 
-        @photo = Photo.new(photo_params)
+        @photo = current_user.photos.build(photo_params)
         if @photo.save  
             redirect_to photos_path
         else 
