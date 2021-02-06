@@ -13,8 +13,8 @@ X  Include at least one many-to-many relationship (x has_many y through z, y has
  X The "through" part of the has_many through includes at least one user submittable attribute, that is to say, some attribute other than its foreign keys that can be submitted by the app's user (attribute_name e.g. ingredients.quantity)
  -User can submit a comment 
 
- Include reasonable validations for simple model objects (list of model objects with validations e.g. User, Recipe, Ingredient, Item)
- - validations for User and Photo and Comment need to be built out 
+ X Include reasonable validations for simple model objects (list of model objects with validations e.g. User, Recipe, Ingredient, Item)
+ - validations for User and Photo and Comment
 
  Include a class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
  - ???, ask what others are doing, get some help to understand this. 
@@ -27,7 +27,7 @@ X Include logout (how e.g. Devise)
  Include third party signup/login (how e.g. Devise/OmniAuth)-- GOOGLE OMNIAUTH like in the video. 
  X Include nested resource show or index (URL e.g. users/2/recipes) 
  X Include nested resource "new" form (URL e.g. recipes/1/ingredients/new)
- Include form display of validation errors (form URL e.g. /recipes/new)
+ X Include form display of validation errors (form URL e.g. /recipes/new)
 Confirm:
 
  The application is pretty DRY
