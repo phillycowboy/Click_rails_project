@@ -1,5 +1,4 @@
 <h1>Photo Feed</h1>
-<%= flash[:message] if flash[:message] %>
 
 <%= form_tag(photos_path, method: :get) do %>
     <%= label_tag "Search", "Search for a Photo by Description" %>
