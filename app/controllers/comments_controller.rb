@@ -1,6 +1,6 @@
 class CommentsController < ApplicationController
     before_action :redirect_if_not_logged_in
-    before_action :find_photo 
+    before_action :find_photo
 
     def index
         
@@ -25,11 +25,16 @@ class CommentsController < ApplicationController
     end
 
     def edit 
-
+        @comment = Comment.find_by(id: params[:id])
     end
 
     def update 
-
+        @comment = Comment.find_by(id: params[:id])
+        if @comment.update(comment_params)
+            redirect_to photo_comment_path(@photo)
+        else 
+            render :edit 
+        end
     end
 
     def destory 
