@@ -1,1 +1,1 @@
-<%= render "form" %>
+<%= render partial: "form", locals: {comment: @comment, url: photo_comments_path(@photo) } %>
