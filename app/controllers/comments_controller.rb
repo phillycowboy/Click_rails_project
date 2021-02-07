@@ -38,8 +38,10 @@ class CommentsController < ApplicationController
         end
     end
 
-    def destory 
-
+    def destroy 
+        @comment = Comment.find_by(id: params[:id])
+        @comment.destroy 
+        redirect_to photo_path(@comment.photo_id)
     end
 
     private 

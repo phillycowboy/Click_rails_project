@@ -1,5 +1,5 @@
 <%= render partial: "/errors", locals: {instance: @comment}%>
-<%= form_for @comment, url: photo_comment_path(@photo) do |f|%>
+<%= form_for @comment, url: photo_comments_path(@photo) do |f|%>
     <%= f.label :content %>
     <%= f.text_field :content %>
 
