@@ -1,1 +1,1 @@
-<%= render "form" %>
+<%= render "form", locals: {comment: @comment, url: photo_comment_path(@photo.id, @comment.id)}%>

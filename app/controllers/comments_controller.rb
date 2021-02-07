@@ -25,13 +25,14 @@ class CommentsController < ApplicationController
     end
 
     def edit 
+        @photo = Photo.find_by(id: params[:photo_id])
         @comment = Comment.find_by(id: params[:id])
     end
 
     def update 
         @comment = Comment.find_by(id: params[:id])
         if @comment.update(comment_params)
-            redirect_to photo_comment_path(@photo)
+            redirect_to photo_path(@comment.photo_id)
         else 
             render :edit 
         end

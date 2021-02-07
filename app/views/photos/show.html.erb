@@ -12,5 +12,5 @@
  <h3>Comments:</h3>
 <% @photo.comments.each do |comment|%>
     <h4><%= comment.user.username%>:</h4> <p><%= comment.content %></p>
-    <%= link_to "Edit Comment", edit_photo_comment_path(@photo)%>
+    <%= link_to "Edit Comment", edit_photo_comment_path(@photo.id, comment.id) %>
 <% end %>
