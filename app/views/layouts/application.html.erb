@@ -19,8 +19,9 @@
       <%= link_to('Photo Feed', photos_path)%>
       <%= link_to('Logout', logout_path)%>
     <% else %>
-      <%= link_to('SignUp', signup_path)%>
-      <%= link_to('Login', login_path)%>
+      <%= link_to('SignUp', signup_path)%> <br>
+      <%= link_to('Login', login_path)%> <br>
+      <%= button_to "Log In With Google", '/auth/google_oauth2', method: "post" %> <br>
     <%end%>
   </div>    
     <%= yield %>
