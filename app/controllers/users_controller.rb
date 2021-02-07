@@ -1,5 +1,15 @@
 class UsersController < ApplicationController
+    before_action :redirect_if_not_logged_in
 
+    def index 
+        
+    end
+    
+    def show 
+        redirect_if_not_logged_in 
+        @user = User.find_by(id: params[:id])
+    end
+    
     def new 
         @user = User.new
     end
@@ -14,10 +24,6 @@ class UsersController < ApplicationController
         end
     end
     
-    def show 
-        redirect_if_not_logged_in 
-        @user = User.find_by(id: params[:id])
-    end
 
     private 
 

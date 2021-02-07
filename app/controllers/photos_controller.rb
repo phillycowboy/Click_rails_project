@@ -1,6 +1,5 @@
 class PhotosController < ApplicationController
-    # before_action :authenticate_owner
-    # before_action :set_user 
+
     before_action :redirect_if_not_logged_in
     before_action :photo_find, only: [:edit, :update, :destroy]
 
