@@ -4,7 +4,7 @@ class PhotosController < ApplicationController
     before_action :photo_find, only: [:edit, :update, :destroy]
 
     def index 
-        @photos = Photo.search(params[:search])
+        @photos = Photo.search(params[:search]).reverse
     end
     
     def show 
