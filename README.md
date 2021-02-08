@@ -1,4 +1,5 @@
 CLICK
+
 Welcome to CLICK! CLICK is a social platform where Users can share their photos with the world. CLICK was created as a photo sharing site so that users can upload and create their own posts to share with the world!
 
 Create an account and start sharing!
