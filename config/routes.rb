@@ -16,6 +16,6 @@ Rails.application.routes.draw do
   end
   
   resources :tag_photos
-  resources :hash_tags
+  resources :hashtags
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
