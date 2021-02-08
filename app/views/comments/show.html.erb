@@ -1,2 +1,3 @@
 <img src="<%= @photo.image %>" alt=""></img>
 <h1><%= @comment.user.username %>: <%= @comment.content %> <%= @comment.hashtag.tag %></h1>
+<%= flash[:message] if flash[:message]%>
