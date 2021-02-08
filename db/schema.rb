@@ -10,12 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_02_08_165817) do
+ActiveRecord::Schema.define(version: 2021_02_08_183240) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
     t.integer "user_id"
     t.integer "photo_id"
+    t.integer "hashtag_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -30,13 +31,6 @@ ActiveRecord::Schema.define(version: 2021_02_08_165817) do
     t.integer "user_id"
     t.string "image"
     t.string "description"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
-  create_table "tag_photos", force: :cascade do |t|
-    t.integer "photo_id"
-    t.integer "hashtag_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

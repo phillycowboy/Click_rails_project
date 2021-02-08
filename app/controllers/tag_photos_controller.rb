@@ -1,2 +1,0 @@
-class TagPhotosController < ApplicationController
-end

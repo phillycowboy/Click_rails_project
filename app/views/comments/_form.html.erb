@@ -3,7 +3,8 @@
     <%= f.label :content %>
     <%= f.text_field :content %>
 
-
+    <%= f.label :hashtags %>
+    <%= f.collection_select(:hashtag_id, Hashtag.all, :id, :tag) %>
 
     <%= f.submit "Add Comment" %>
 
