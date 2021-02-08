@@ -30,7 +30,7 @@ X Include logout (how e.g. Devise)
  X Include form display of validation errors (form URL e.g. /recipes/new)
 Confirm:
 
- The application is pretty DRY
- Limited logic in controllers
- Views use helper methods if appropriate - before action in the controllers where you are repeating code 
- Views use partials if appropriate Photo and Comment, Possibly new user? 
+ X The application is pretty DRY
+ X Limited logic in controllers
+ X Views use helper methods if appropriate - before action in the controllers where you are repeating code 
+X  Views use partials if appropriate Photo and Comment, Possibly new user? 
