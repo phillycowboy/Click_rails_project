@@ -11,8 +11,11 @@
     <img src="<%=  photo.image %>" alt=""></img>
     <% end %>
     <br><h3><%= photo.user.username %></h3><br>
-    <h4><%= photo.description %> <%= photo.tag_photos %></h4>
+    <h4><%= photo.description %> <%= photo.tag_photos.first %></h4>
 <% end %>
+
+
+
 
 
 
