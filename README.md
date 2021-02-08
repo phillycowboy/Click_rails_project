@@ -7,6 +7,7 @@ Installation
 First execute:
 
 $ git clone then copy and paste the SSH KEY git@github.com:phillycowboy/Click_rails_project.git next to this in your terminal and hit return.
+
 Second execute:
 
 $bundle install
