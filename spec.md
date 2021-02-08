@@ -16,15 +16,15 @@ X  Include at least one many-to-many relationship (x has_many y through z, y has
  X Include reasonable validations for simple model objects (list of model objects with validations e.g. User, Recipe, Ingredient, Item)
  - validations for User and Photo and Comment
 
- Include a class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
- - ???, ask what others are doing, get some help to understand this. 
+ X Include a class level ActiveRecord scope method (model object & class method name and URL to see the working feature e.g. User.most_recipes URL: /users/most_recipes)
+ -index page has a search bar to search photos by description 
 
  
  X Include signup (how e.g. Devise)
 X Include login (how e.g. Devise)
 X Include logout (how e.g. Devise)
  
- Include third party signup/login (how e.g. Devise/OmniAuth)-- GOOGLE OMNIAUTH like in the video. 
+ X Include third party signup/login (how e.g. Devise/OmniAuth)-- GOOGLE OMNIAUTH like in the video. 
  X Include nested resource show or index (URL e.g. users/2/recipes) 
  X Include nested resource "new" form (URL e.g. recipes/1/ingredients/new)
  X Include form display of validation errors (form URL e.g. /recipes/new)
