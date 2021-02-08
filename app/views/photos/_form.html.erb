@@ -11,7 +11,8 @@
     <%= f.label :description %>
     <%= f.text_area :description %> <br> <br>
 
-
+    <%= f.label :hash_tags %>
+    <%= f.collection_select :id, HashTag.all, :id, :tag %>
 
     <%= f.submit  %>
 
