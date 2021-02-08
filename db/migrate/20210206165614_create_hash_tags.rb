@@ -6,3 +6,6 @@ class CreateHashTags < ActiveRecord::Migration[6.1]
     end
   end
 end
+
+#needs to be renamed hashtags 
+#attr tag 

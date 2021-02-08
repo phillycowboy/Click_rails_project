@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+HashTag.destroy_all
 
 HashTag.create(tag: "#awesome")
 HashTag.create(tag: "#cool")
@@ -22,5 +23,4 @@ HashTag.create(tag: "#selfie")
 HashTag.create(tag: "#pod")
 HashTag.create(tag: "#nature")
 HashTag.create(tag: "#mood")
-TagPhoto.create(tag: "#vibes")
-TagPhoto.create(tag: "#coolio")
+

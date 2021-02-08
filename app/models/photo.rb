@@ -5,7 +5,8 @@ class Photo < ApplicationRecord
     has_many :comments
 
     validates :image, presence: true 
-    validates :description, presence: true  
+    validates :description, presence: true 
+    
 
     def self.search(search)
         if search.blank?

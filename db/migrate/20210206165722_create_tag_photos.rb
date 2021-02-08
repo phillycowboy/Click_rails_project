@@ -7,3 +7,9 @@ class CreateTagPhotos < ActiveRecord::Migration[6.1]
     end
   end
 end
+
+#needs to be tags_photos 
+
+# hashtag_id 
+
+

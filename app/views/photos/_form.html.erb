@@ -11,9 +11,11 @@
     <%= f.label :description %>
     <%= f.text_area :description %> <br> <br>
 
-    <%= f.label :tag_photos %>
-    <%= f.collection_select(:id, TagPhoto.all, :id, :tag) %>
+    <%= f.label :hash_tags %>
+    <%= f.collection_select(:id, HashTag.all, :id, :tag) %>
 
     <%= f.submit  %>
 
 <% end %>
+
+collection_select(:post, :author_id, Author.all, :id, :name_with_initial, prompt: true)
