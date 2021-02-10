@@ -1,17 +1,20 @@
-<h1>Photo Feed</h1>
+<div class="text-center">
+    <h1>Photo Feed</h1>
+</div>
 
 <%= form_tag(photos_path, method: :get) do %>
-    <%= label_tag "Search", "Search for a Photo by Description" %>
-    <%= text_field_tag(:search, params[:search]) %>
-    <%= submit_tag "Search" %>
+    <div class="text-center">
+        <%= label_tag "Search", "Search for a Photo by Description", class: "form-control"%>
+        <%= text_field_tag(:search, params[:search]) %>
+        <%= submit_tag "Search" %>
+    </div>
 <% end %>
 
 <% @photos.each do |photo| %>
    <div class="text-center"><%= link_to photo_path(photo) do %>
-    <img src="<%=  photo.image %>" alt=""></img>
-    <% end %>
-    <br><h3><%= photo.user.username %></h3><br>
-    <h4><%= photo.description %></h4>
+        <img src="<%=  photo.image %>" alt=""></img>
+        <% end %>
+        <br><h3><%= photo.user.username %></h3> <h4><%= photo.description %></h4>
     </div>
 <% end %>
 
