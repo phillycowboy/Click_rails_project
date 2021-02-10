@@ -140,9 +140,6 @@ GEM
     omniauth-oauth2 (1.7.1)
       oauth2 (~> 1.4)
       omniauth (>= 1.9, < 3)
-    omniauth-rails_csrf_protection (1.0.0)
-      actionpack (>= 4.2)
-      omniauth (~> 2.0)
     optimist (3.0.1)
     parslet (2.0.0)
     pry (0.13.1)
@@ -263,7 +260,6 @@ DEPENDENCIES
   listen (~> 3.3)
   omniauth
   omniauth-google-oauth2
-  omniauth-rails_csrf_protection
   optimist (~> 3.0)
   pry
   puma (~> 5.0)
@@ -277,7 +273,7 @@ DEPENDENCIES
   tzinfo-data
   web-console (>= 4.1.0)
   webdrivers
-  webpacker
+  webpacker (~> 5.2, >= 5.2.1)
   yarn (~> 0.1.1)
 
 RUBY VERSION
