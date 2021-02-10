@@ -1,14 +1,16 @@
-<h1>Login</h1>
-
+<div class="text-center">
+    <h1>Login</h1>
+</div>
 <%= flash[:message] if flash[:message] %>
+<div class="text-center form-control">
+    <%= form_for :user do |f|%>
+        <%= f.label :username %>
+        <%= f.text_field :username %> <br>
 
-<%= form_for :user do |f|%>
-    <%= f.label :username %>
-    <%= f.text_field :username %> <br>
+        <%= f.label :password %>
+        <%= f.password_field  :password %> <br>
 
-    <%= f.label :password %>
-    <%= f.password_field  :password %> <br>
+        <%= f.submit "Login"%>
 
-    <%= f.submit "Login"%>
-
-<% end %>
+    <% end %>
+</div>

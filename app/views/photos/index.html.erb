@@ -6,7 +6,9 @@
     <div class="text-center">
         <%= label_tag "Search", "Search for a Photo by Description", class: "form-control"%>
         <%= text_field_tag(:search, params[:search]) %>
-        <%= submit_tag "Search" %>
+        <div>
+            <%= submit_tag "Search" %>
+        </div>
     </div>
 <% end %>
 
