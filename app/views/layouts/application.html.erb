@@ -19,12 +19,12 @@
     <h1 class="logo">Click!</h1>
       <div>
         <% if logged_in? %>
-          <%= link_to('Add A Photo', new_photo_path)%> |
-          <%= link_to('Photo Feed', photos_path)%> |
-          <%= link_to('Logout', logout_path)%> 
+          <button class="btn btn-sm btn-outline-secondary"><%= link_to('Add A Photo', new_photo_path)%></button> |
+          <button class="btn btn-sm btn-outline-secondary"><%= link_to('Photo Feed', photos_path)%></button> |
+          <button class="btn btn-sm btn-outline-secondary"><%= link_to('Logout', logout_path)%></button> 
         <% else %>
-          <%= link_to('SignUp', signup_path)%> |
-          <%= link_to('Login', login_path)%> |
+          <button class="btn btn-sm btn-outline-secondary"><%= link_to('SignUp', signup_path)%></button> |
+          <button class="btn btn-sm btn-outline-secondary"><%= link_to('Login', login_path)%></button> |
           <%= button_to "Log In With Google", '/auth/google_oauth2', method: "post" %> 
         <%end%>
       </div>  
