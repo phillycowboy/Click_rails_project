@@ -8,14 +8,15 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
   
     <nav class="navbar navbar-dark bg-dark fixed-top">
-    <h1>Click!</h1>
+    <h1 class="logo">Click!</h1>
       <div>
         <% if logged_in? %>
           <%= link_to('Add A Photo', new_photo_path)%> |

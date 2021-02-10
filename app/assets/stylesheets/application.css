@@ -16,9 +16,14 @@
 
 
 .navbar.navbar-dark.bg-dark.fixed-top{
-    color: whitesmoke;
     box-shadow: 0 5px 5px -2px grey;
     opacity: 0.95;
+}
+
+.logo{
+    color: whitesmoke;
+    font-family: 'Permanent Marker', cursive;
+
 }
 
 .text-center{
