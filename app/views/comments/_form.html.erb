@@ -1,12 +1,14 @@
 <%= render partial: "/errors", locals: {instance: @comment}%>
-<%= form_for comment, url: url do |f|%>
-    <%= f.label :content %>
-    <%= f.text_field :content %>
+<div class="text-center form-control">
+    <%= form_for comment, url: url do |f|%>
+        <%= f.label :content %>
+        <%= f.text_field :content %>
 
-    <%= f.label :hashtags %>
-    <%= f.collection_select(:hashtag_id, Hashtag.all, :id, :tag) %>
+        <%= f.label :hashtags %>
+        <%= f.collection_select(:hashtag_id, Hashtag.all, :id, :tag) %>
 
-    <%= f.submit "Add Comment" %>
+        <%= f.submit "Add Comment" %>
 
 
-<% end %>
+    <% end %>
+</div>
