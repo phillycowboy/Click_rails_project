@@ -46,7 +46,6 @@
 
 h1{
     font-family: 'Permanent Marker', cursive;
-    
 }
 
 .polaroid-show{
@@ -56,6 +55,26 @@ h1{
     padding: 15px 15px 30px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+
+}
+
+.options{
+    text-align: center;
+}
+
+.wrapper{
+    background-color: lightgray;
+    margin: 50px 50px 30px;
+    opacity: 0.95;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+}
+h3{
+    font-family: 'Permanent Marker', cursive;
+
+}
+h4{
+    font-family: 'Permanent Marker', cursive;
 
 }
 

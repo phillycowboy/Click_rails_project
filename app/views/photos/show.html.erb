@@ -4,16 +4,18 @@
     <h4><%= @photo.user.username %></h4> - <%= @photo.description %><br>
 </div>
 
-<%= link_to "Edit Photo", edit_photo_path(@photo) %> <br>
-<%= button_to "Delete Photo", photo_path(@photo.id), method: "delete" %> <br>
-<%= link_to "Comment", new_photo_comment_path(@photo) %> <br>
-
+<div class="options">
+    <%= link_to "Edit Photo", edit_photo_path(@photo) %> |
+    <%= link_to "Comment", new_photo_comment_path(@photo) %> 
+    <%= button_to "Delete Photo", photo_path(@photo.id), method: "delete" %> 
+</div>
 <%= flash[:message] if flash[:message] %>
 
-
+<div class="wrapper">
  <h3>Comments:</h3>
-<% @photo.comments.each do |comment|%>
-    <h4><%= comment.user.username%>:</h4> <p><%= comment.content %> <%= comment.hashtag.tag %></p>
-    <%= link_to "Edit Comment", edit_photo_comment_path(@photo.id, comment.id) %>
-    <%= button_to "Delete Comment", photo_comment_path(@photo.id, comment.id), method: "delete" %>
-<% end %>
+    <% @photo.comments.each do |comment|%>
+        <h4><%= comment.user.username%>:</h4> <p><%= comment.content %> <%= comment.hashtag.tag %></p>
+        <%= link_to "Edit Comment", edit_photo_comment_path(@photo.id, comment.id) %>
+        <%= button_to "Delete Comment", photo_comment_path(@photo.id, comment.id), method: "delete" %>
+    <% end %>
+</div>
