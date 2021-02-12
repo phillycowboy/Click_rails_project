@@ -46,6 +46,10 @@
     transform: scale(1.2);
     transition: ease .75s;
 }
+h1{
+    font-family: 'Permanent Marker', cursive;
+    
+}
 
 
 
