@@ -25,9 +25,6 @@
     font-family: 'Permanent Marker', cursive;
 }
 
-
-
-
 .text-center{
     margin-top: 100px;
 }
@@ -46,9 +43,20 @@
     transform: scale(1.2);
     transition: ease .75s;
 }
+
 h1{
     font-family: 'Permanent Marker', cursive;
     
+}
+
+.polaroid-show{
+    background: #ffffff;
+    display: block;
+    margin: 100px 500px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+
 }
 
 
