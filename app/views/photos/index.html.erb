@@ -13,8 +13,8 @@
 <% end %>
 
 <% @photos.each do |photo| %>
-   <div class="text-center"><%= link_to photo_path(photo) do %>
-        <img src="<%=  photo.image %>" alt=""></img>
+   <div class="polaroid"><%= link_to photo_path(photo) do %>
+        <img src="<%=  photo.image %>" alt="" height="500"></img>
         <% end %>
         <br><h3><%= photo.user.username %></h3> <h4><%= photo.description %></h4>
     </div>

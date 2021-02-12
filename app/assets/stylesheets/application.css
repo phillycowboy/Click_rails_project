@@ -32,6 +32,21 @@
     margin-top: 100px;
 }
 
+.polaroid{
+    background: #ffffff;
+    display: inline-block;
+    margin: 55px 75px 30px;
+    padding: 15px 15px 30px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+}
+
+.polaroid:hover{
+    color: lightgray;
+    transform: scale(1.2);
+    transition: ease .75s;
+}
+
 
 
 
