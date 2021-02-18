@@ -7,11 +7,15 @@ class Photo < ApplicationRecord
     validates :description, presence: true 
     
 
-    def self.search(search)
-        if search.blank?
-            Photo.all
-        else 
-            where('description LIKE ?', "%#{search}%")
-        end
-    end
+    # def self.search(search)
+    #     if search.blank?
+    #         Photo.all
+    #     else 
+    #         where('description LIKE ?', "%#{search}%")
+    #     end
+    # end
+
+    scope :search, ->(search) {where("description LIKE ?", "%#{search}%") if search.present? }
+
+
 end
