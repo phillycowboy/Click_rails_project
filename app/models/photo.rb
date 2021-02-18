@@ -15,7 +15,7 @@ class Photo < ApplicationRecord
     #     end
     # end
 
-    scope :search, ->(search) {where("description LIKE ?", "%#{search}%") if search.present? }
+    scope :search, ->(search) {where("description LIKE ?", "%#{search}%") if search.present? } 
 
 
 end
