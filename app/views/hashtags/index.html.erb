@@ -1,0 +1,7 @@
+<div class="hashtags">
+    <% @hashtags.each do |hashtag| %>
+        
+        <h3><%= link_to hashtag.tag, hashtag_path(hashtag)%></h3>
+    
+    <% end %>
+</div>
